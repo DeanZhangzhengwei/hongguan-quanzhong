@@ -1,0 +1,6 @@
+宏观权重 / hongguan-quanzhong
+Base model: Qwen/Qwen3.5-4B, by the Qwen team.
+Upstream: https://huggingface.co/Qwen/Qwen3.5-4B
+Upstream license: Apache License 2.0.
+
+Modifications by DeanZhangzhengwei (2026): QLoRA fine-tuning for mathematics, economics, and Chinese policy; released as a separate LoRA adapter. The adapter configuration replaces the local base-model path with the public model identifier. Tokenizer files and chat template are copied from the trained adapter export. This is an independent fine-tune, not an official Qwen release or endorsement.

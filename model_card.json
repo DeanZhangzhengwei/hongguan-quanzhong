@@ -1,0 +1,56 @@
+{
+  "artifact": "LoRA adapter, not standalone full model",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "base_license": "Apache-2.0",
+  "adapter_license": "Apache-2.0",
+  "checkpoint_step": 341,
+  "adapter_sha256": "a070dec4e052d60b0587f34994151de306b1de0596573cd369bafa2125493c00",
+  "adapter_bytes": 55888736,
+  "training": {
+    "lr": 0.0001,
+    "seed": 20261017,
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0,
+    "batch_size": 1,
+    "gradient_accumulation": 8,
+    "unique_train_samples": 2051,
+    "cards": 186,
+    "whole_questions": 1865,
+    "optimizer_steps_completed": 491,
+    "best_step": 341,
+    "best_validation": {
+      "loss": 1.7094660085797355,
+      "by_bank": {
+        "math": {
+          "loss": 1.0776867458609687,
+          "assistant_tokens": 14917,
+          "examples": 96
+        },
+        "economics": {
+          "loss": 1.9987484710443013,
+          "assistant_tokens": 24327,
+          "examples": 101
+        },
+        "policy": {
+          "loss": 2.3778717205932747,
+          "assistant_tokens": 3571,
+          "examples": 41
+        }
+      }
+    },
+    "actual_fractional_passes": 1.4402054292002935,
+    "stop_reason": "validation_patience",
+    "versions": {
+      "torch": "2.11.0+cu128",
+      "transformers": "5.20.1",
+      "peft": "0.21.2",
+      "accelerate": "1.15.0",
+      "bitsandbytes": "0.50.2"
+    }
+  },
+  "data_distribution_included": false,
+  "base_revision": "Original download commit not recorded in the inspected training manifest",
+  "requested_repository": "DeanZhangzhengwei/hongguan-quanzhong",
+  "publication_status": "RELEASE_PACKAGE_PREPARED"
+}
